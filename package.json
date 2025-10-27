@@ -1,5 +1,5 @@
 {
-  "name": "fe-test-imajin",
+  "name": "marketplace",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,18 +9,37 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.9",
+    "@hookform/resolvers": "^5.2.2",
+    "@tanstack/react-query": "^5.90.5",
+    "axios": "^1.12.2",
+    "clsx": "^2.1.1",
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.18",
+    "iron-session": "^8.0.4",
+    "next": "16.0.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "next": "16.0.0"
+    "react-hook-form": "^7.65.0",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.3.1",
+    "ua-parser-js": "^2.0.6",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/crypto-js": "^4.2.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "16.0.0"
+    "eslint-config-next": "16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

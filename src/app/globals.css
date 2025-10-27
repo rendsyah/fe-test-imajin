@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #7688c9;
+}
+
+@layer base {
+  body {
+    @apply text-black font-normal;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  button:disabled {
+    @apply cursor-not-allowed;
+  }
+}
+
+@utility input {
+  @apply w-full appearance-none rounded-xl border border-black py-2.75 px-4 text-sm text-black placeholder:text-gray-400 focus:outline-hidden focus:ring-primary focus:border-primary;
+}
+
+@utility input-label {
+  @apply block text-black text-sm font-semibold mb-1.5;
+}
+
+@utility input-error {
+  @apply border-red-600 focus:ring-red-600 focus:border-red-600;
+}
+
+@utility input-disabled {
+  @apply cursor-not-allowed;
+}
+
+@utility input-text-error {
+  @apply text-red-500 text-xs;
+}
+
+@utility no-scrollbar {
+  /* Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@utility custom-scrollbar {
+  &::-webkit-scrollbar {
+    @apply size-1.5;
+  }
+
+  &::-webkit-scrollbar-track {
+    @apply rounded-full;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full;
+  }
+}
